@@ -20,9 +20,10 @@ body {
 
 body > div#ipsum-fill {
     text-align: justify;
-    width: 80%;
-    padding-left: 20%;
-    padding-top: 10%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15%;
     padding-bottom: 10%;
 }
 
