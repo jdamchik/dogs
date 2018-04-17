@@ -1,4 +1,5 @@
 /*jslint browser: true*/
+/*eslint indent: [2, "tab"]*/
 /*global $*/
 
 
@@ -27,7 +28,7 @@ var main = function () {
         if ($(window).width() <= "600") {
             if ($(this).siblings().size() > 0) {
                 $(this).siblings().slideToggle("fast");
-				$(this).children(".toggle").html($(this).children(".toggle").html() === 'close' ? 'expand' : 'close');
+                $(this).children(".toggle").html($(this).children(".toggle").html() === 'close' ? 'expand' : 'close');
             }
         }
     });

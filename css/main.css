@@ -18,9 +18,16 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+body > div#ipsum-fill {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
 header {
-    background-color: rgb(140, 193, 193);
-    border-bottom: 1px solid rgba(0,0,0,.15);
+    border-bottom: 2px solid rgba(0,0,0,.15);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -42,11 +49,10 @@ header {
         header > div#logo > h1 {
             color: white;
             font-weight: 300;
-            text-transform: lowercase;
         }
         
         header > div#logo > div#navToggle {
-            background-color: rgba(0,0,0,.15);
+            background-color: rgba(83,129,172,.5);
             position: absolute;
             right: 0;
             top: 0;
@@ -54,11 +60,11 @@ header {
         }
             
             header > div#logo > div#navToggle:hover {
-                background-color: rgba(0,0,0,.1);
+                background-color: rgba(83,129,172,.2);
             }
             
             header > div#logo > div#navToggle > a {
-                color: rgba(255,255,255,.85);
+                color: rgb(230,230,230);
                 display: block;
                 font-size: 0.85em;
                 font-weight: 600;
@@ -68,11 +74,11 @@ header {
             }
             
                 header > div#logo > div#navToggle:hover > a {
-                    color: rgba(255,255,255,1);
+                    color: rgb(255,255,255);
                 }
 
     header > nav {
-        background-color: white;
+        background-color: rgb(83,129,172);
         display: none;
         flex: 1;
         transform: 300ms all ease;
@@ -141,13 +147,13 @@ header {
                     }
 
 /* Medium screens */
-@media all and (min-width: 600px) {
+@media all and (min-width: 1280px) {
     header > div#logo > div#navToggle {
         display: none;    
     }
     
     header {
-        background-color: white;
+        background-color: rgb(83,129,172);
         flex-direction: row;
         line-height: 90px;
         padding: 0 3rem;
@@ -162,7 +168,7 @@ header {
         }
     
             header > div#logo > h1 {
-                color: rgb(140, 193, 193);
+                color: rgb(230,230,230);
             }
             
     header > nav {
@@ -198,7 +204,7 @@ header {
 						display: inline-block;
 						height: 0;
 						margin: 0 0 0 .25rem;
-						transition: 250ms all ease;
+						transition: 150ms all ease;
 						width: 0;
 						vertical-align: middle;
 					}
@@ -209,7 +215,7 @@ header {
 						}
     
     header > nav > ul > li:hover > nav {
-        background-color: rgb(51,51,51);
+        background-color: rgb(83,129,172);
         border-radius: .25em;
         box-shadow: 0 2px 8px rgba(0,0,0,.6);
         display: block;
